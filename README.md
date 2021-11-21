@@ -1,4 +1,5 @@
 # SQLite
+В этом файле находятся запросы к базе данных SQLite, которая используется в проекте Beauty-Shop
 ###	Запрос на самую популярную услугу в месяце.
 select title as Услуга, count(*) as Количество from services s
 join services_visits_workers svw on s.id=svw.id_service
